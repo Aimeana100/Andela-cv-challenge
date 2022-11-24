@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anathole 's CV</title>
+
+    <style>
+      /* general */
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        position: relative;
+      }
+
+      .heading__2{
+        font-weight: 700;
+        font-size: 24px;;
+      }
+
+      body {
+        background-color: aliceblue;
+      }
+
+      .container {
+        margin: 10px auto;
+        max-width: 600px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        /* z-index: 20px; */
+      }
+
+      .container header {
+        margin: 15px;
+      }
+
+      .container header{
+        color: #693c3c;
+
+      }
+
+      .main__content {
+        display: flex;
+        width: 100%;
+      }
+
+      .container .left__section {
+        padding: 15px;
+        color: #ffffff;
+        background-color: #693c3c;
+      }
+
+      .left__section .contact__address{
+        margin: 8px 0px;
+      }
+      .left__section .contact__address p {
+        margin: 2px 0px;
+      }
+      .left__section .contact__address a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #ffffff;
+
+      }
+
+      .main__content .left__section .profile_picture_container {
+        width: 144px;
+        height: 144px;
+        border-radius: 50%;
+        margin: 0px auto;
+      }
+
+      .left__section .profile_picture_container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      .left__section .skills_container {
+        margin-top: 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .left__section .skills_container .heading__2 {
+        font-size: 24;
+        font-weight: 700;
+        margin: 8px 0px;
+      }
+
+      .skills_container .skills__specific{
+        margin: 10px 0px;
+      }
+
+      .skills_container .skills__specific h3{
+        margin-bottom: 5px;
+        font-size: 20;
+        font-family: bold;
+      }
+
+      
+      .skills_container .skills .lists p{
+        font-size: 14px;
+      }
+
+      .skills_container .skills .lists p::before{
+        content: " ";
+        height:3px;
+        width:3px;
+        margin-right: 2px;
+        background-color:#ffffff;
+      }
+
+
+
+      /* rightsection */
+      .right__section{
+        background-color:#E6DFDF;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
+      }
+      .right__section > div:not(:nth-child(2)){
+        margin: 12px;
+      }
+
+
+      .right__section .heading__2{
+        color: #693c3c;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .right__section p{
+        /* text-align: justify; */
+        line-height: 214x;
+      }
+      .exprience__container .exprinece{
+
+        display: flex;
+        /* justify-content: space-between; */
+
+      }
+
+      .right__section .left h4{
+        margin: 5px 0px;
+        font-size: 16;
+        font-weight: bold;
+
+      }
+      .right__section .left h4:nth-child(2){
+        color:#693c3c;
+      }
+      .exprience__container .exprinece .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      .exprience__container .exprinece .right{
+        flex: 1;
+      }
+
+      .education__container .education{
+        display: flex;
+        margin: 12px 0px;
+
+      }
+
+      .education__container .education_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .education__container .education .left{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      .education__container .education .right{
+        flex: 1;
+      }
+
+      .right__section .right h4{
+        font-weight: 800;
+        font-size: 16px;
+        margin-bottom: 8px;
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>KARINGANIRE</h1>
+        <h2>Anathole</h2>
+      </header>
+      <main>
+        <div class="main__content">
+          <div class="left__section">
+            <div class="profile_picture_container">
+              <img
+                class="profile_picture"
+                src="assets/images/Anathole_passport.png"
+                alt="KARINGANIRE Anathole"
+              />
+            </div>
+            <div class="contact__address">
+              <p>
+                <a href=""> <i class="fa fa-"></i> aimeanathole@gmail.com </a>
+              </p>
+              <p>
+                <a href=""> <i class="fa fa-"></i> (+250) 783544533</a>
+              </p>
+              <p>
+                <a href=""> <i class="fa fa-"></i> Aimeana100 </a>
+              </p>
+              <p>
+                <a href=""> <i class="fa fa-"></i> Aimeana100 </a>
+              </p>
+              <p>
+                <a href=""> <i class="fa fa-"></i> LinkedIn </a>
+              </p>
+            </div>
+
+            <div class="skills_container">
+              <div class="">
+                <h2 class="heading__2">Skills</h2>
+              </div>
+              <div class="skills">
+                <div class="skills__specific">
+                  <h3>Profesional skills</h3>
+                  <div class="lists">
+                    <p>PHP</p>
+                    <p>Javascript</p>
+                    <p>C / C++</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>SQL</p>
+                    <p>Unix / Linux scripting</p>
+                    <p>Server management</p>
+                  </div class="lists">
+                </div>
+
+                <div class="skills__specific">
+                  <h3>Soft skills</h3>
+                  <div class="lists">
+                    <p>Critical thinking</p>
+                    <p>Problem solving</p>
+                    <p>Team management</p>
+                    <p>Communication</p>
+                    <p>Leadership</p>
+                  </div class="lists">
+                </div>
+
+                <div class="skills__specific">
+                  <h3>Spoken Languages</h3>
+                  <div class="lists">
+                    <p>English</p>
+                    <p>Kinyarwanda</p>
+                    <p>Swahili</p>
+                  </div class="lists">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right__section">
+            <div id="about__me" class="">
+              <h2 class="heading__2"><i class="fa fa-"></i> About me</h2>
+              <p>
+                I am a hardworking, self-motivated, critical thinker and always
+                upbeat individual. I am a and full-stack developer with
+                expertise in PHP and JavaScript.
+              </p>
+            </div>
+
+            <hr />
+
+            <div class="exprience__container">
+              <h2 class="heading__2"><i class="fa fa-"></i> Exprience</h2>
+
+              <div class="exprience__content">
+                <div class="exprinece">
+
+                  <div class="left">
+                    <h4 class="time_frame">Mar 2021 - present</h4>
+                    <h4 class="institution">SANTECH Ltd</h4>
+                  </div>
+
+                  <div class="right">
+                    <h4 class="title">Software developer</h4>
+
+                    <div class="responsablities">
+                      <p>Software Techinical requirements gathering.</p>
+                      <p>
+                        Work with developers to design algorithms and
+                        flowcharts.
+                      </p>
+                      <p>
+                        Integrate software components and third-party programs
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- education start -->
+
+            <div class="education__container">
+              <h2 class="heading__2"><i class="fa fa-"></i> Aducation</h2>
+
+              <div class="education_content">
+
+                <div class="education">
+                  <div class="left">
+                    <h4 class="time_frame">Nov 2022 - present</h4>
+                    <h4 class="institution">Andela - ATLP</h4>
+                  </div>
+                  <div class="right">
+                    <h4 class="title">Full stack dev certificate</h4>
+
+                    <div class="responsablities">
+                      <p>
+                        Full-stack readyness with Technical and soft skills
+                        needed to thrive as a software engineer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="education">
+                  <div class="left">
+                    <h4 class="time_frame">Sep 2016 - Jun 2020</h4>
+                    <h4 class="institution">University of Rwanda</h4>
+                  </div>
+                  <div class="right">
+                    <h4 class="title">
+                      Bachelor of Computer Science (Honours)
+                    </h4>
+
+                    <div class="responsablities">
+                      <p>Software Analysis & design.</p>
+                      <p>Software Archtecture.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- education end -->
+          </div>
+
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
