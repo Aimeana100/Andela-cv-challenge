@@ -26,7 +26,7 @@
 
       .container {
         margin: 10px auto;
-        max-width: 600px;
+        max-width: 595px;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -136,10 +136,10 @@
       }
 
       .right__section p{
-        /* text-align: justify; */
+        word-spacing: .4em;
         line-height: 214x;
       }
-      .exprience__container .exprinece{
+      .exprience__container .exprience{
 
         display: flex;
         /* justify-content: space-between; */
@@ -155,14 +155,14 @@
       .right__section .left h4:nth-child(2){
         color:#693c3c;
       }
-      .exprience__container .exprinece .left{
+      .exprience__container .exprience .left{
         flex: 1;
         display: flex;
         flex-direction: column;
 
       }
 
-      .exprience__container .exprinece .right{
+      .exprience__container .exprience .right{
         flex: 1;
       }
 
@@ -196,6 +196,35 @@
 
       }
 
+      @media screen and (max-width: 595px) {
+        .right__section .exprience__content .exprience{
+            flex-direction: column;
+        }
+        .right__section .education_content .education{
+            flex-direction: column;
+        }
+        .right__section .right{
+            margin-top: 20px;
+        }
+        
+      }
+
+      /* @media screen and (max-width: 300) {
+        .right__section .exprience__content .exprience{
+            flex-direction: column;
+        }
+        .right__section .education_content .education{
+            flex-direction: column;
+        }
+        .right__section .right{
+            margin-top: 20px;
+        }
+        
+      } */
+
+
+
+      
 
     </style>
   </head>
@@ -291,7 +320,7 @@
               <h2 class="heading__2"><i class="fa fa-"></i> Exprience</h2>
 
               <div class="exprience__content">
-                <div class="exprinece">
+                <div class="exprience">
 
                   <div class="left">
                     <h4 class="time_frame">Mar 2021 - present</h4>
