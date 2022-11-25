@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anathole 's CV</title>
+    <script
+      src="https://kit.fontawesome.com/e7a6391963.js"
+      crossorigin="anonymous"
+    >
+  </script>
 
     <style>
+
       /* general */
       * {
         padding: 0px;
@@ -15,9 +21,9 @@
         position: relative;
       }
 
-      .heading__2{
+      .heading__2 {
         font-weight: 700;
-        font-size: 24px;;
+        font-size: 24px;
       }
 
       body {
@@ -37,9 +43,8 @@
         margin: 15px;
       }
 
-      .container header{
+      .container header {
         color: #693c3c;
-
       }
 
       .main__content {
@@ -53,17 +58,18 @@
         background-color: #693c3c;
       }
 
-      .left__section .contact__address{
+      .left__section .contact__address {
         margin: 8px 0px;
       }
       .left__section .contact__address p {
         margin: 2px 0px;
       }
-      .left__section .contact__address a {
+      .left__section .contact__address a, .left__section  p {
         text-decoration: none;
         font-size: 14px;
         color: #ffffff;
-
+        margin: 2px 0px;
+        font-weight: 500;
       }
 
       .main__content .left__section .profile_picture_container {
@@ -81,7 +87,7 @@
 
       .left__section .skills_container {
         margin-top: 20px;
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
       }
@@ -92,110 +98,100 @@
         margin: 8px 0px;
       }
 
-      .skills_container .skills__specific{
+      .skills_container .skills__specific {
         margin: 10px 0px;
       }
 
-      .skills_container .skills__specific h3{
+      .skills_container .skills__specific h3 {
         margin-bottom: 5px;
         font-size: 20;
         font-family: bold;
       }
 
-      
-      .skills_container .skills .lists p{
+      .skills_container .skills .lists p {
         font-size: 14px;
       }
 
-      .skills_container .skills .lists p::before{
+      .skills_container .skills .lists p::before {
         content: " ";
-        height:3px;
-        width:3px;
+        height: 3px;
+        width: 3px;
         margin-right: 2px;
-        background-color:#ffffff;
+        background-color: #ffffff;
       }
 
-
-
       /* rightsection */
-      .right__section{
-        background-color:#E6DFDF;
+      .right__section {
+        background-color: #e6dfdf;
         display: flex;
         flex-direction: column;
         padding: 0px 15px;
       }
-      .right__section > div:not(:nth-child(2)){
+      .right__section > div:not(:nth-child(2)) {
         margin: 12px;
       }
 
-
-      .right__section .heading__2{
+      .right__section .heading__2 {
         color: #693c3c;
         font-weight: 700;
         margin-bottom: 10px;
       }
 
-      .right__section p{
-        word-spacing: .4em;
+      .right__section p {
+        word-spacing: 0.4em;
         line-height: 214x;
       }
-      .exprience__container .exprience{
-
-        display: flex;
+      .exprience__container .exprience {
+        display: block;
         /* justify-content: space-between; */
-
       }
 
-      .right__section .left h4{
+      .right__section .left h4 {
         margin: 5px 0px;
         font-size: 16;
         font-weight: bold;
-
       }
-      .right__section .left h4:nth-child(2){
-        color:#693c3c;
+      .right__section .left h4:nth-child(2) {
+        color: #693c3c;
       }
-      .exprience__container .exprience .left{
+      .exprience__container .exprience .left {
         flex: 1;
         display: flex;
         flex-direction: column;
-
       }
 
-      .exprience__container .exprience .right{
+      .exprience__container .exprience .right {
         flex: 1;
       }
 
-      .education__container .education{
-        display: flex;
+      .education__container .education {
+        display: block;
         margin: 12px 0px;
-
       }
 
-      .education__container .education_content{
+      .education__container .education_content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
 
-      .education__container .education .left{
+      .education__container .education .left {
         width: 200px;
         display: flex;
         flex-direction: column;
-
       }
 
-      .education__container .education .right{
+      .education__container .education .right {
         flex: 1;
       }
 
-      .right__section .right h4{
+      .right__section .right h4 {
         font-weight: 800;
         font-size: 16px;
         margin-bottom: 8px;
-
       }
 
+      /* 
       @media screen and (max-width: 595px) {
         .right__section .exprience__content .exprience{
             flex-direction: column;
@@ -207,7 +203,7 @@
             margin-top: 20px;
         }
         
-      }
+      } */
 
       /* @media screen and (max-width: 300) {
         .right__section .exprience__content .exprience{
@@ -222,9 +218,6 @@
         
       } */
 
-
-
-      
 
     </style>
   </head>
@@ -244,12 +237,15 @@
                 alt="KARINGANIRE Anathole"
               />
             </div>
+
             <div class="contact__address">
               <p>
-                <a href=""> <i class="fa fa-"></i> aimeanathole@gmail.com </a>
+                <a href="">
+                  <i class="fa-thin fa-envelope"></i> aimeanathole@gmail.com
+                </a>
               </p>
               <p>
-                <a href=""> <i class="fa fa-"></i> (+250) 783544533</a>
+                <a href=""> <i class="fa fa-phone"></i> (+250) 783544533</a>
               </p>
               <p>
                 <a href=""> <i class="fa fa-"></i> Aimeana100 </a>
@@ -266,6 +262,7 @@
               <div class="">
                 <h2 class="heading__2">Skills</h2>
               </div>
+
               <div class="skills">
                 <div class="skills__specific">
                   <h3>Profesional skills</h3>
@@ -278,7 +275,7 @@
                     <p>SQL</p>
                     <p>Unix / Linux scripting</p>
                     <p>Server management</p>
-                  </div class="lists">
+                  </div>
                 </div>
 
                 <div class="skills__specific">
@@ -289,7 +286,7 @@
                     <p>Team management</p>
                     <p>Communication</p>
                     <p>Leadership</p>
-                  </div class="lists">
+                  </div>
                 </div>
 
                 <div class="skills__specific">
@@ -298,13 +295,14 @@
                     <p>English</p>
                     <p>Kinyarwanda</p>
                     <p>Swahili</p>
-                  </div class="lists">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="right__section">
+            
             <div id="about__me" class="">
               <h2 class="heading__2"><i class="fa fa-"></i> About me</h2>
               <p>
@@ -313,7 +311,6 @@
                 expertise in PHP and JavaScript.
               </p>
             </div>
-
             <hr />
 
             <div class="exprience__container">
@@ -321,15 +318,14 @@
 
               <div class="exprience__content">
                 <div class="exprience">
-
                   <div class="left">
-                    <h4 class="time_frame">Mar 2021 - present</h4>
-                    <h4 class="institution">SANTECH Ltd</h4>
+                    <h4 class="title">Software developer</h4>
+                    <h5 class="time_frame"> 2021 - present</h5>
+                    <h45class="institution">SANTECH Ltd</h5>
+
                   </div>
 
                   <div class="right">
-                    <h4 class="title">Software developer</h4>
-
                     <div class="responsablities">
                       <p>Software Techinical requirements gathering.</p>
                       <p>
@@ -341,6 +337,7 @@
                       </p>
                     </div>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -356,12 +353,12 @@
 
                 <div class="education">
                   <div class="left">
-                    <h4 class="time_frame">Nov 2022 - present</h4>
                     <h4 class="institution">Andela - ATLP</h4>
+                    <h5 class="title">Full stack dev certificate</h5>
+                    <h5 class="time_frame"> 2022 - present</h5>
                   </div>
-                  <div class="right">
-                    <h4 class="title">Full stack dev certificate</h4>
 
+                  <div class="right">
                     <div class="responsablities">
                       <p>
                         Full-stack readyness with Technical and soft skills
@@ -369,17 +366,19 @@
                       </p>
                     </div>
                   </div>
+
                 </div>
 
                 <div class="education">
                   <div class="left">
-                    <h4 class="time_frame">Sep 2016 - Jun 2020</h4>
                     <h4 class="institution">University of Rwanda</h4>
+                    <h5 class="title">
+                      Bachelor of Computer Science (Honours)
+                    </h5>
+                    <h5 class="time_frame">Sep 2016 - Jun 2020</h5>
                   </div>
                   <div class="right">
-                    <h4 class="title">
-                      Bachelor of Computer Science (Honours)
-                    </h4>
+
 
                     <div class="responsablities">
                       <p>Software Analysis & design.</p>
@@ -392,7 +391,6 @@
 
             <!-- education end -->
           </div>
-
         </div>
       </main>
     </div>
