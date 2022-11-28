@@ -11,6 +11,15 @@
     >
   </script>
 
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+ -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <style>
 
       /* general */
@@ -19,8 +28,20 @@
         margin: 0px;
         box-sizing: border-box;
         position: relative;
+        font-family: 'Poppins', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
+
+
       }
 
+
+      h2{
+        font-family: 'Roboto', sans-serif;
+
+      }
+      p{
+        font-size: 14px;
+      }
       .heading__2 {
         font-weight: 700;
         font-size: 24px;
@@ -31,12 +52,12 @@
       }
 
       .container {
-        margin: 10px auto;
+        margin: 2px auto;
         max-width: 595px;
         background-color: white;
         display: flex;
         flex-direction: column;
-        /* z-index: 20px; */
+        padding: 0px 5px;
       }
 
       .container header {
@@ -45,17 +66,28 @@
 
       .container header {
         color: #693c3c;
+        text-align: center;
       }
 
       .main__content {
         display: flex;
         width: 100%;
+        flex-direction: column;
       }
 
       .container .left__section {
-        padding: 15px;
+        padding: 20px;
         color: #ffffff;
         background-color: #693c3c;
+        flex-direction: column;
+        /* width: fit-content; */
+        /* margin: auto; */
+
+      }
+
+      .container .left__section > div{
+        width: fit-content;
+        margin: auto;
       }
 
       .left__section .contact__address {
@@ -63,18 +95,25 @@
       }
       .left__section .contact__address p {
         margin: 2px 0px;
+        display: flex;
       }
       .left__section .contact__address a, .left__section  p {
         text-decoration: none;
-        font-size: 14px;
+        font-size: 13px;
         color: #ffffff;
         margin: 2px 0px;
         font-weight: 500;
+        display: flex;
+        align-items: center;
+      }
+
+      .left__section .contact__address i, .left__section .contact__address .mark{
+        margin-right: 2px;
       }
 
       .main__content .left__section .profile_picture_container {
-        width: 144px;
-        height: 144px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         margin: 0px auto;
       }
@@ -109,7 +148,7 @@
       }
 
       .skills_container .skills .lists p {
-        font-size: 14px;
+        font-size: 13px;
       }
 
       .skills_container .skills .lists p::before {
@@ -127,8 +166,9 @@
         flex-direction: column;
         padding: 0px 15px;
       }
+      
       .right__section > div:not(:nth-child(2)) {
-        margin: 12px;
+        margin: 13px;
       }
 
       .right__section .heading__2 {
@@ -154,19 +194,15 @@
       .right__section .left h4:nth-child(2) {
         color: #693c3c;
       }
-      .exprience__container .exprience .left {
-        flex: 1;
+      /* .exprience__container .exprience .left {
         display: flex;
         flex-direction: column;
-      }
+      } */
 
-      .exprience__container .exprience .right {
-        flex: 1;
-      }
 
       .education__container .education {
         display: block;
-        margin: 12px 0px;
+        margin: 13px 0px;
       }
 
       .education__container .education_content {
@@ -176,22 +212,43 @@
       }
 
       .education__container .education .left {
-        width: 200px;
+        /* width: 200px; */
         display: flex;
         flex-direction: column;
       }
 
-      .education__container .education .right {
-        flex: 1;
-      }
-
-      .right__section .right h4 {
+  
+      .right__section h4 {
         font-weight: 800;
         font-size: 16px;
         margin-bottom: 8px;
       }
 
-      /* 
+
+      @media only screen and (min-width: 600px) {
+        .main__content{
+          flex-direction: row;
+        }
+
+        .container header {
+        color: #693c3c;
+        text-align: left;
+      }
+
+      .container .left__section > div{
+        width: 100%;
+        margin: auto;
+      }
+      }
+
+      .main__content .left__section .profile_picture_container {
+        width: 144px;
+        height: 144px;
+        border-radius: 50%;
+        margin: 0px auto;
+      }
+
+      
       @media screen and (max-width: 595px) {
         .right__section .exprience__content .exprience{
             flex-direction: column;
@@ -203,7 +260,7 @@
             margin-top: 20px;
         }
         
-      } */
+      }
 
       /* @media screen and (max-width: 300) {
         .right__section .exprience__content .exprience{
@@ -230,6 +287,8 @@
       <main>
         <div class="main__content">
           <div class="left__section">
+            <div>
+
             <div class="profile_picture_container">
               <img
                 class="profile_picture"
@@ -241,20 +300,20 @@
             <div class="contact__address">
               <p>
                 <a href="">
-                  <i class="fa-thin fa-envelope"></i> aimeanathole@gmail.com
+                  <i class="fa fa-envelope"></i> aimeanathole@gmail.com
                 </a>
               </p>
               <p>
                 <a href=""> <i class="fa fa-phone"></i> (+250) 783544533</a>
               </p>
               <p>
-                <a href=""> <i class="fa fa-"></i> Aimeana100 </a>
+                <a href=""> <i class="fa fa-twitter"></i> Aimeana100 </a>
               </p>
               <p>
-                <a href=""> <i class="fa fa-"></i> Aimeana100 </a>
+                <a href=""> <i class="fa fa-github"></i> Aimeana100 </a>
               </p>
               <p>
-                <a href=""> <i class="fa fa-"></i> LinkedIn </a>
+                <a href=""> <i class="fa fa-linkedin"></i> LinkedIn </a>
               </p>
             </div>
 
@@ -299,10 +358,11 @@
                 </div>
               </div>
             </div>
+            
+            </div>
           </div>
 
           <div class="right__section">
-            
             <div id="about__me" class="">
               <h2 class="heading__2"><i class="fa fa-"></i> About me</h2>
               <p>
@@ -311,6 +371,7 @@
                 expertise in PHP and JavaScript.
               </p>
             </div>
+
             <hr />
 
             <div class="exprience__container">
@@ -321,7 +382,7 @@
                   <div class="left">
                     <h4 class="title">Software developer</h4>
                     <h5 class="time_frame"> 2021 - present</h5>
-                    <h45class="institution">SANTECH Ltd</h5>
+                    <h5 class="institution">SANTECH Ltd</h5>
 
                   </div>
 
@@ -375,7 +436,7 @@
                     <h5 class="title">
                       Bachelor of Computer Science (Honours)
                     </h5>
-                    <h5 class="time_frame">Sep 2016 - Jun 2020</h5>
+                    <h5 class="time_frame">2016 - 2020</h5>
                   </div>
                   <div class="right">
 
